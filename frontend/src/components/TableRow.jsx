@@ -9,8 +9,7 @@ const TableRow = ({ id, product, cost, qty }) => {
 
   return (
     <tr>
-      <th scope="row">{id}</th>
-      <td>{product}</td>
+      <td scope="row">{product}</td>
       <td>{cost}</td>
       <td>{qty}</td>
       <td>

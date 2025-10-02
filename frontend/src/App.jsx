@@ -21,17 +21,16 @@ function App() {
 
   return (
     <div className="text-bg-dark vh-100">
-      <div className="d-flex gap-3 p-3 flex-column flex-md-row">
+      <div className="d-flex gap-3 p-3">
       <Search setSearchTerm={setSearchTerm}/>
       <Link to="/add">
         <ButtonComponent icon="folder-plus" btnStyle="success" />
       </Link>
       </div>
 
-      <table className="table-dark table table-hover table-sm">
+      <table className="table-dark table table-hover" style={{ maxWidth: "98%", margin: "0 auto" }}>
         <thead>
           <tr>
-            <th scope="col" className="w-25">ID</th>
             <th scope="col">Product</th>
             <th scope="col">Cost</th>
             <th scope="col">Qty</th>
